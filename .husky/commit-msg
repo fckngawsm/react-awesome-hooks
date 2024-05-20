@@ -1,6 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-echo "Проверка сообщения"
 # Запускаем commitlint и проверяем код выхода
 npx --no-install commitlint --edit "$1" || {
   echo
